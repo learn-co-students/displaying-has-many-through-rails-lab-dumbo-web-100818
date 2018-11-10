@@ -1,0 +1,11 @@
+<%= @doctor.name %>
+<ul>
+ <% @doctor.get_time.each do |app| %>
+   <li><%= app %></li>
+ <% end %>
+</ul>
+<ul>
+ <% @doctor.patients.each do |app| %>
+   <li><%= link_to app.name, patient_path(app) %></li>
+ <% end %>
+</ul>
