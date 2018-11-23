@@ -1,0 +1,13 @@
+<%= form_for @appointment do |f| %>
+<%= f.label :patient %>
+<%= f.collection_select :patient_id, Patient.all, :id, :name %>
+
+<%= f.label :doctor %>
+<%= f.collection_select :doctor_id, Doctor.all, :id, :name %>
+
+<%= f.label :time %>
+<%= f.datetime_select :appointment_datetime %>
+
+<%= f.submit %><br>
+<%= link_to 'Back', :back %>
+<% end  %>
