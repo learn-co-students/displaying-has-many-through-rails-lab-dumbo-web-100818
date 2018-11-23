@@ -6,7 +6,7 @@
 <br><br>
 <% patient.appointments.each do |app|  %>
 
-<%= link_to app.appointment_datetime.strftime("%B %e, %Y at %I:%M %p"), app %>
+<%= link_to app.appointment_datetime.strftime("%B %e, %Y at %I:%M %p") %>
 <br><br>
 <% end  %>
 <% end %>

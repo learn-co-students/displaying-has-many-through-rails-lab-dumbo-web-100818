@@ -1,8 +1,8 @@
 class AppointmentsController < ApplicationController
   def new
     @appointment = Appointment.new
-    # @patients = Patient.all
-    # @doctors = Doctor.all
+    @patients = Patient.all
+    @doctors = Doctor.all
   end
 
   def create
